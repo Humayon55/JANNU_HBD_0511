@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F8C8DC">
+    <title>Happy Birthday, {herName}! 🎂❤️</title>
+    <meta name="description" content="A little pink universe made entirely of love — a birthday surprise.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+    <main class="page welcome">
+        <!-- Cute stickers floating around the welcome screen -->
+        <span class="sticker" style="top:90px;left:4%" aria-hidden="true">🧸</span>
+        <span class="sticker" style="top:140px;right:6%" aria-hidden="true">🎀</span>
+        <span class="sticker" style="top:46%;left:3%" aria-hidden="true">🎈</span>
+        <span class="sticker" style="top:52%;right:4%" aria-hidden="true">🐱</span>
+        <span class="sticker" style="bottom:12%;left:8%" aria-hidden="true">🌹</span>
+        <span class="sticker" style="bottom:16%;right:9%" aria-hidden="true">🎁</span>
+
+        <section class="welcome-hero" aria-labelledby="welcomeTitle">
+            <div class="heart-frame glow">
+                <div class="heart-mask"><img data-photo="herPhoto" data-emoji="👸" alt="My beautiful birthday girl"></div>
+            </div>
+            <h1 id="welcomeTitle" class="glow-title" data-text="text.welcome.title"></h1>
+            <p class="subtitle" data-text="text.welcome.subtitle"></p>
+            <p class="welcome-intro" data-text="text.welcome.intro"></p>
+        </section>
+
+        <section class="cake-stage" aria-label="Birthday cake">
+            <div class="cake" id="cake">
+                <!-- Heart-shaped cake drawn in SVG -->
+                <svg class="cake-svg" viewBox="0 0 300 280" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="cakeBody" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#FFE4EC"/><stop offset="1" stop-color="#F7A1C4"/>
+                        </linearGradient>
+                        <linearGradient id="frost" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFD6E7"/>
+                        </linearGradient>
+                        <clipPath id="heartClip">
+                            <path d="M150 250C70 196 14 150 14 92 14 50 46 20 86 20c28 0 52 16 64 38 12-22 36-38 64-38 40 0 72 30 72 72 0 58-56 104-136 158z"/>
+                        </clipPath>
+                    </defs>
+                    <ellipse cx="150" cy="262" rx="134" ry="15" fill="#FFFFFF"/>
+                    <ellipse cx="150" cy="266" rx="118" ry="8" fill="#F8C8DC"/>
+                    <path transform="translate(0 10)" fill="#E88AAE" d="M150 250C70 196 14 150 14 92 14 50 46 20 86 20c28 0 52 16 64 38 12-22 36-38 64-38 40 0 72 30 72 72 0 58-56 104-136 158z"/>
+                    <path fill="url(#cakeBody)" d="M150 250C70 196 14 150 14 92 14 50 46 20 86 20c28 0 52 16 64 38 12-22 36-38 64-38 40 0 72 30 72 72 0 58-56 104-136 158z"/>
+                    <g clip-path="url(#heartClip)">
+                        <path fill="url(#frost)" d="M0 0H300V96Q290 120 278 98 266 80 254 104 244 128 232 100 220 84 206 108 194 130 182 102 170 86 158 110 150 126 140 104 128 84 116 108 104 132 92 100 80 84 68 106 56 126 44 98 32 84 20 104 10 120 0 96Z"/>
+                        <path d="M0 190q25-14 50 0t50 0 50 0 50 0 50 0 50 0" stroke="#FFFFFF" stroke-width="7" fill="none" opacity=".85"/>
+                        <g opacity=".9">
+                            <rect x="60" y="62" width="10" height="3" rx="1.5" fill="#FF69B4" transform="rotate(30 65 63)"/>
+                            <rect x="100" y="44" width="10" height="3" rx="1.5" fill="#E63946" transform="rotate(-20 105 45)"/>
+                            <rect x="196" y="48" width="10" height="3" rx="1.5" fill="#FF69B4" transform="rotate(50 201 49)"/>
+                            <rect x="236" y="70" width="10" height="3" rx="1.5" fill="#7A284F" transform="rotate(-40 241 71)"/>
+                            <rect x="84" y="80" width="10" height="3" rx="1.5" fill="#7A284F" transform="rotate(70 89 81)"/>
+                            <rect x="216" y="86" width="10" height="3" rx="1.5" fill="#E63946" transform="rotate(15 221 87)"/>
+                            <circle cx="130" cy="76" r="3" fill="#FF69B4"/><circle cx="176" cy="74" r="3" fill="#E63946"/>
+                            <circle cx="46" cy="84" r="2.5" fill="#FF69B4"/><circle cx="256" cy="90" r="2.5" fill="#FF69B4"/>
+                        </g>
+                    </g>
+                    <path fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-dasharray="0.1 12" d="M150 250C70 196 14 150 14 92 14 50 46 20 86 20c28 0 52 16 64 38 12-22 36-38 64-38 40 0 72 30 72 72 0 58-56 104-136 158z"/>
+                    <text id="cakeName" class="cake-name" x="150" y="160" text-anchor="middle">{herName}</text>
+                    <text x="72" y="150" font-size="22" fill="#E63946">♥</text>
+                    <text x="214" y="150" font-size="22" fill="#E63946">♥</text>
+                    <text x="140" y="214" font-size="20" fill="#FF69B4">♥</text>
+                    <text x="100" y="192" font-size="14" fill="#FFFFFF">✿</text>
+                    <text x="186" y="192" font-size="14" fill="#FFFFFF">✿</text>
+                </svg>
+
+                <button class="candle" id="candle" type="button" aria-label="The special birthday candle — tap it">
+                    <span class="flame"><span class="flame-inner"></span></span>
+                    <span class="wick"></span>
+                    <span class="candle-body"></span>
+                </button>
+                <div class="smoke" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            </div>
+
+            <p class="cake-hint" id="cakeHint" aria-live="polite">Tap the candle ✨</p>
+
+            <div class="message-card glass hidden" id="candleMsg" aria-live="polite">
+                <p class="message-text"></p>
+            </div>
+
+            <div class="actions">
+                <a href="pages/accept.html" class="btn btn-primary btn-glow hidden" id="continueBtn">Continue My Birthday Surprise →</a>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
